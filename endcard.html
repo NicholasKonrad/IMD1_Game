@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="new.js"></script>
+    <script src="p5min.js"></script>
+    <script src="p5setup.js"></script>
+
+    <title>Super Mortyo Bros.</title>
+</head>
+
+<body>
+
+    <p class="text">
+        <strong>
+            You played the entire Game. <br />
+            Well done, Morty<br />
+            Here, have a cookie.<br />
+            Now play it again.
+        </strong>
+        <!-- <button id="#butty" onclick="home()">Go Back to the Garage</button> -->
+        <a href="index.html">Back to the Garage</a>
+    </p>
+    <script>
+        function home() {
+            window.location.assign('index.html');
+        }
+    </script>
+
+
+    <style>
+        .text {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        p {
+            margin-top: 40vh;
+            margin-bottom: 0px;
+            margin-left: 40vw;
+            font-size: 40px;
+            font-family: fantasy;
+            color: rgb(4, 15, 10);
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 80%;
+        }
+
+        #butty {
+            background-image: linear-gradient(rgb(20, 200, 95), rgb(20, 128, 200));
+            margin-top: -250px;
+            margin-left: 50vw;
+            height: 0;
+            border: none;
+            text-decoration: none;
+            font-size: 26px;
+            padding: 5px 5px;
+        }
+
+        a,
+        a:hover {
+            float: left;
+            margin-left: 50%;
+            text-decoration: none;
+        }
+
+        a {
+            color: rgb(206, 109, 18);
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+
+    <style>
+        html:not(#butty) {
+            background: url('BG-endcard.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        body {
+            height: 100%;
+            margin: auto;
+        }
+    </style>
+
+    <script>
+        window.onkeydown = function (e) {
+            return !(e.keyCode == 32);
+        };
+
+    </script>
+
+</body>
+
+</html>

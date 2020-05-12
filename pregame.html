@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="new.js"></script>
+    <script src="p5min.js"></script>
+    <script src="p5setup.js"></script>
+
+    <title>Super Mortyo Bros.</title>
+</head>
+
+<body>
+
+    <p class="text">
+        <strong>
+            Ziel dieses<br />
+            Spiels ist es,<br />
+            jedes Level<br />
+            zu clearen,<br />
+            also alle<br />
+            Items<br />
+            einzusammeln <br />
+            und <br />
+            gegebenenfalls<br />
+            alle Gegner<br />
+            töten. <br />
+        </strong>
+        <a href="level1.html" class="text">Let's Go then!</a>
+    </p>
+
+    <style>
+        .text {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        p {
+            margin-top: 5%;
+            margin-left: 2%;
+            margin-bottom: 1%;
+            font-size: 40px;
+            font-family: fantasy;
+            color: rgb(36, 14, 119);
+            display: flex;
+            flex-wrap: wrap;
+            width: 25%;
+            height: 80%;
+        }
+
+        a,
+        a:hover {
+            /* margin-top: -10%; */
+            text-decoration: none;
+            font-size: 50px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: rgb(206, 109, 18);
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+
+    <style>
+        html {
+            background: url('BG-pregame.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        body {
+            height: 100%;
+            margin: auto;
+
+        }
+    </style>
+
+    <script>
+        window.onkeydown = function (e) {
+            return !(e.keyCode == 32);
+        };
+
+    </script>
+
+</body>
+
+</html>

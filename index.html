@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="p5min.js"></script>
+    <script src="p5setup.js"></script>
+
+    <title>Super Mortyo Bros.</title>
+</head>
+
+<body>
+
+    <div>
+        <a href="pregame.html">Click Here To Play</a>
+    </div>
+
+    <!-- <audio id="Rick and Morty Theme Remix" src="LOrchestra Cinématique - Rick and Morty Main Theme Epic Version.wav"
+        autoplay></audio> -->
+
+    <style>
+        html {
+            background: url('BG-startscreen.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            height: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        body {
+            height: 100%;
+            margin: auto;
+
+        }
+
+        div {
+            height: 100%;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: fantasy;
+            font-size: 200%;
+
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color: greenyellow;
+        }
+    </style>
+
+    <script>
+        window.onkeydown = function (e) {
+            return !(e.keyCode == 32);
+        };
+    </script>
+
+    <script>var theme = new Audio('Main Theme Edit.wav');
+        theme.play();
+    </script>
+
+
+</body>
+
+</html>
